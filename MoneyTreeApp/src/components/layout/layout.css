@@ -13,6 +13,8 @@
 .nav {
     grid-area: nav;
     background: cornflowerblue;
+    display: flex;
+    justify-content: space-between;
 }
 
 .sidebar {
@@ -23,6 +25,7 @@
 .page-header{
     grid-area: page-header;
     background: darkgreen;
+    padding: 20px 20px;
 }
 
 .main-content {
