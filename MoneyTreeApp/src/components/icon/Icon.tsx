@@ -7,11 +7,13 @@ const icons = import.meta.glob("../../assets/svgs/**/*.svg", {
 });
 
 interface IconProps {
+    width: number;
+    height: number
     svgLocation: string;
     svgFileName: string;
 }
 
-const Icon = ({ svgLocation, svgFileName }: IconProps) => {
+const Icon = ({ svgLocation, svgFileName, width, height }: IconProps) => {
     const svgPath = `../../assets/svgs/${svgLocation}/${svgFileName}.svg`;
     const SvgIcon = icons[svgPath] as React.ComponentType<React.SVGProps<SVGSVGElement>> | undefined;
 
@@ -22,12 +24,7 @@ const Icon = ({ svgLocation, svgFileName }: IconProps) => {
         return null;
     }
 
-    if (svgLocation === "nav") {
-        return <SvgIcon width={60} height={60}/>;
-    }
-    else if (svgLocation === "sidebar") {
-        return <SvgIcon width={30} height={30}/>;
-    }
+    return <SvgIcon width={width} height={height}/>
 };
 
 export default Icon;
