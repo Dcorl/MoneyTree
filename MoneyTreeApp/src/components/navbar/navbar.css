@@ -1,3 +1,13 @@
+.nav {
+    grid-area: nav;
+    background: #717744;
+    color: #FFFDFB;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-family: montserrat, sans-serif;
+}
+
 .app-name, .user-details{
     display: flex;
     align-items: center;
