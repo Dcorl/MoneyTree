@@ -1,0 +1,17 @@
+.app-name, .user-details{
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+
+.app-name h1{
+    font-size: 26px;
+}
+
+.user-details{
+    width: 180px;
+}
+
+.user-details h2{
+    font-size: 18px;
+}
