@@ -1,5 +1,6 @@
 import {type ReactNode} from 'react';
 import "./layout.css"
+import Navbar from "../navbar/Navbar.tsx";
 
 interface LayoutProps {
     children: ReactNode;
@@ -8,7 +9,7 @@ interface LayoutProps {
 const Layout = ({children}:LayoutProps) => {
     return (
         <div className="app-layout">
-            <header className="nav"></header>
+            <Navbar firstName="Testing"/>
             <aside className="sidebar"></aside>
             <main className="main-content">
                 <header className="page-header">
