@@ -1,4 +1,3 @@
-import "../layout/layout.css"
 import "./navbar.css"
 import Icon from "../icon/Icon.tsx";
 

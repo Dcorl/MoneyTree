@@ -10,21 +10,6 @@
     min-height: 100vh;
 }
 
-.nav {
-    grid-area: nav;
-    background: #717744;
-    color: #FFFDFB;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    font-family: montserrat, sans-serif;
-}
-
-.sidebar {
-    grid-area: sidebar;
-    background: blueviolet;
-}
-
 .page-header{
     grid-area: page-header;
     background: darkgreen;
