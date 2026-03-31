@@ -4,10 +4,10 @@ import Navbar from "../navbar/Navbar.tsx";
 import Sidebar from "../sidebar/Sidebar.tsx";
 
 interface LayoutProps {
-    children: ReactNode;
+    page: ReactNode;
 }
 
-const Layout = ({children}:LayoutProps) => {
+const Layout = ({page}:LayoutProps) => {
     return (
         <div className="app-layout">
             <Navbar firstName="Testing"/>
@@ -16,7 +16,7 @@ const Layout = ({children}:LayoutProps) => {
                 <header className="page-header">
                     Dashboard Header
                 </header>
-                {children}
+                {page}
             </main>
         </div>
     );

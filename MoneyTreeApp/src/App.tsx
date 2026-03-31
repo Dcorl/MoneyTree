@@ -1,11 +1,11 @@
 import Layout from "./components/layout/Layout.tsx";
 import './App.css'
+import Overview from "./pages/Overview.tsx";
 
 function App() {
 
   return (
-      <Layout>
-          <p>Testing Page Layout/Wrapper</p>
+      <Layout page=<Overview/>>
       </Layout>
   )
 }
