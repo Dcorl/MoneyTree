@@ -1,0 +1,31 @@
+.sidebar {
+    grid-area: sidebar;
+    padding: 20px;
+    background: linear-gradient(181deg, #332922, #766153);
+    color: #FFFDFB;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-top: 80px;
+}
+
+.sidebar-group, .last-sidebar-group{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.sidebar-group {
+    border-bottom: 1px white solid;
+    padding-bottom: 20px;
+}
+
+.sidebar-item {
+    display: flex;
+    gap: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    color: azure;
+    align-items: center;
+
+}
