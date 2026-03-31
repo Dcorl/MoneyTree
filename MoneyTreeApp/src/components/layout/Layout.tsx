@@ -2,6 +2,7 @@ import {type ReactNode} from 'react';
 import "./layout.css"
 import Navbar from "../navbar/Navbar.tsx";
 import Sidebar from "../sidebar/Sidebar.tsx";
+import PageHeader from "../pageheader/PageHeader.tsx";
 
 interface LayoutProps {
     page: ReactNode;
@@ -13,9 +14,7 @@ const Layout = ({page}:LayoutProps) => {
             <Navbar firstName="Testing"/>
             <Sidebar/>
             <main className="main-content">
-                <header className="page-header">
-                    Dashboard Header
-                </header>
+                <PageHeader title="Overview"/>
                 {page}
             </main>
         </div>
