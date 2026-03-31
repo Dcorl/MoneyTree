@@ -1,0 +1,58 @@
+.overview-layout {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 150px 170px 170px 170px 200px;
+
+    grid-template-areas:
+        "summary this-month last-month"
+        "accounts accounts chart"
+        "budgets budgets chart"
+        "budgets budgets calendar"
+        "transactions transactions calendar";
+
+    row-gap: 40px;
+    padding: 20px 40px;
+
+    width: 100%;
+    max-width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.summary {
+    grid-area: summary;
+    margin-right: 40px;
+}
+
+.this-month {
+    grid-area: this-month;
+    margin-left: 40px;
+}
+
+.last-month {
+    grid-area: last-month;
+}
+
+.accounts {
+    grid-area: accounts;
+}
+
+.chart {
+    grid-area: chart;
+}
+
+.budgets {
+    grid-area: budgets;
+}
+
+.transactions {
+    grid-area: transactions;
+}
+
+.calendar {
+    grid-area: calendar;
+}
+
+.last-month, .chart, .calendar {
+    margin-left: 80px;
+}
