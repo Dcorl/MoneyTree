@@ -1,5 +1,5 @@
 import "./overview.css"
-import Card from "../components/cards/card.tsx";
+import Card from "../../components/cards/card.tsx";
 
 const Overview = () => {
     return (
