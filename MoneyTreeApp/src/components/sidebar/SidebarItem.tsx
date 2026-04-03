@@ -1,15 +1,17 @@
 import Icon from "../icon/Icon.tsx";
+import {Link} from "react-router-dom";
 
 interface SidebarItemProps {
-    item: string;
+    name: string;
+    route: string;
 }
 
-const SidebarItem = ({item}:SidebarItemProps) => {
+const SidebarItem = ({name,route}:SidebarItemProps) => {
     return (
-        <a className="sidebar-item">
+        <Link to={`/${route}`} className="sidebar-item">
             <Icon width={20} height={20} svgLocation="sidebar" svgFileName="PlaceholderIcon"/>
-            {item}
-        </a>
+            {name}
+        </Link>
     );
 };
 
