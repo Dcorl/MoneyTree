@@ -1,0 +1,12 @@
+.import-page-layout{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10%;
+    flex-direction: column;
+}
+
+.import-page-layout h2 {
+    font-size: 30px;
+    color: #342a23;
+}
