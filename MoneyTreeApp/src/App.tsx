@@ -1,11 +1,11 @@
 import Layout from "./components/layout/Layout.tsx";
 import './App.css'
-import Overview from "./pages/Overview.tsx";
+import Transactions from "./pages/transactions/Transactions.tsx";
 
 function App() {
 
   return (
-      <Layout page=<Overview/>>
+      <Layout page=<Transactions/>>
       </Layout>
   )
 }

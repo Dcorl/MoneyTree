@@ -1,0 +1,48 @@
+.transactions-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 150px 80px 170px 300px 300px;
+
+    grid-template-areas:
+        "total-income total-spent gross-income largest-spend budget-usage"
+        "search search search search search"
+        "transactions transactions transactions transactions transactions";
+
+    row-gap: 40px;
+    column-gap: 40px;
+    padding: 20px 40px;
+
+    width: 100%;
+    max-width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.total-income {
+    grid-area: total-income;
+}
+
+.total-spent {
+    grid-area: total-spent;
+}
+
+.gross-income {
+    grid-area: gross-income;
+}
+
+.largest-spend {
+    grid-area: largest-spend;
+}
+
+.budget-usage {
+    grid-area: budget-usage;
+}
+
+.search {
+    grid-area: search;
+}
+
+.transactions {
+    grid-area: transactions;
+    height: 700px;
+}
