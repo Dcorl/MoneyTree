@@ -1,13 +1,9 @@
-import Layout from "./components/layout/Layout.tsx";
+import {RouterProvider} from "react-router-dom";
+import router from "./components/browserRouter/browserRouter"
 import './App.css'
-import Import from "./pages/import/Import.tsx";
 
 function App() {
-
-  return (
-      <Layout page=<Import/>>
-      </Layout>
-  )
+    return <RouterProvider router={router}/>
 }
 
 export default App
