@@ -42,7 +42,7 @@
     grid-area: search;
 }
 
-.transactions {
+.transactions-layout .transactions {
     grid-area: transactions;
     height: 700px;
 }
